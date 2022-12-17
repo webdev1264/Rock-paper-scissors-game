@@ -40,6 +40,7 @@
     linear-gradient(var(--lizard-gradient));
   box-shadow: 0 4px inset hsl(227, 24%, 77%), 0 4px hsl(261, 50%, 44%);
 }
+
 .spock {
   top: 29px;
   left: -55px;
@@ -62,7 +63,6 @@
 }
 
 .picked:nth-child(2) {
-  content: "";
   left: unset;
   right: 0;
 }

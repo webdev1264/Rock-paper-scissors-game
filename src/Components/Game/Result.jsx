@@ -7,12 +7,20 @@ const Result = (props) => {
   return (
     <div className={styles.container}>
       <div className={styles.shapeWrapper}>
-        <Shape {...props} name={props.pick} />
+        <div>
+          <Shape {...props} name={props.pick} />
+        </div>
         <Shape {...props} name={randomShape} randomShape={randomShape} />
         <div className={styles.round}></div>
       </div>
-      <p className={styles.result}>{result}</p>
-      <button onClick={restart}>Play again</button>
+      <span className={styles.youPick}>YOU PICKED</span>
+      <span className={styles.housePick}>THE HOUSE PICKED</span>
+      <p className={styles.result}>
+        {result !== "Draw" ? `You ${result}` : result}
+      </p>
+      <button className={styles.btn} onClick={restart}>
+        PLAY AGAIN
+      </button>
     </div>
   );
 };

@@ -1,15 +1,45 @@
 .container {
   position: relative;
-  width: 100%;
+  width: 315px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 200px 0 0;
 }
 
 .round {
   position: absolute;
-  background-color: hsl(220,46%,19%);
+  background-color: hsl(220, 46%, 19%);
   top: -40px;
   right: 0;
   height: 110px;
   width: 110px;
   border-radius: 100%;
   z-index: 0;
+}
+
+.youPick {
+  position: absolute;
+  left: 30px;
+  top: 100px;
+}
+.housePick {
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+
+.result {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.btn {
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin-top: 20px;
+  color: var(--dark-text);
+  width: 220px;
+  height: 50px;
 }

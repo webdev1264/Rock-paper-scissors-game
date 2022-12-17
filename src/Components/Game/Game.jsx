@@ -4,8 +4,7 @@ import Result from "./Result";
 import styles from "./game.module.css";
 
 const shapes = ["scissors", "paper", "rock", "lizard", "spock"];
-const randomNum = Math.ceil(Math.random() * 4);
-const randomShape = shapes[randomNum];
+
 const gamePattern = {
   scissors: ["paper", "lizard"],
   paper: ["rock", "spock"],
@@ -14,27 +13,38 @@ const gamePattern = {
   spock: ["scissors", "rock"],
 };
 
-const Game = () => {
+const Game = ({ addScore }) => {
   const [pick, setPick] = useState();
+
+  const [randomShape, setRandomShape] = useState();
 
   const [result, setresult] = useState();
 
+  const getRandomShape = () => {
+    const randomNum = Math.round(Math.random() * 4);
+    return shapes[randomNum];
+  };
+
   const pickShapeHandler = (name) => {
+    const housePick = getRandomShape();
+    setRandomShape(housePick);
     setPick(name);
-    if (name === randomShape) {
+    if (name === housePick) {
       setresult("Draw");
       return;
     }
-    gamePattern[name].includes(randomShape)
-      ? setresult("Win")
-      : setresult("Lose");
+    if (gamePattern[name].includes(housePick)) {
+      setresult("Win");
+      addScore();
+      return;
+    }
+    setresult("Lose");
   };
 
   const restart = () => {
     setPick();
   };
 
-  console.log(result);
   return (
     <div className={styles.container}>
       {!pick ? (
