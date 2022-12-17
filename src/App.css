@@ -1,3 +1,18 @@
 .App {
-    text-align: center;
+  text-align: center;
+  background-image: linear-gradient(var(--radial-gradient));
+  width: 100%;
+  height: 750px;
+  padding: 30px;
+}
+
+.btn {
+  height: 40px;
+  width: 130px;
+  border: 2px solid hsl(225,17%,59%);
+  border-radius: 7px;
+  background-color: hsl(230,44%,18%);
+  color: #fff;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 17px;
 }

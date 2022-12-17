@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid var(--header-outline);
+  border-radius: 7px;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+}
+
+.logo {
+  margin: 10px;
+}
+
+.scoreWrapper {
+  height: 72px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px;
+}
+
+.heading {
+  font-size: 11px;
+  color: var(--score-text);
+}
+
+.counter {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--dark-text);
+}

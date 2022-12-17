@@ -1,0 +1,8 @@
+.container {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  background: url("../../data/images/bg-pentagon.svg") center center/cover
+    no-repeat;
+}

@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.round {
+  position: absolute;
+  background-color: hsl(220,46%,19%);
+  top: -40px;
+  right: 0;
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  z-index: 0;
+}
