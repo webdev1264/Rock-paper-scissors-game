@@ -1,5 +1,5 @@
-import rules from "../data/images/image-rules-bonus.svg";
-import close from "../data/images/icon-close.svg";
+import rules from "../../data/images/image-rules-bonus.svg";
+import close from "../../data/images/icon-close.svg";
 import styles from "./rules.module.css";
 
 const Rules = ({ showRules }) => {

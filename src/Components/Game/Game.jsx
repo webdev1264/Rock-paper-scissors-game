@@ -13,7 +13,7 @@ const gamePattern = {
   spock: ["scissors", "rock"],
 };
 
-const Game = ({ addScore }) => {
+const Game = ({ changeScore }) => {
   const [pick, setPick] = useState();
 
   const [randomShape, setRandomShape] = useState();
@@ -30,15 +30,16 @@ const Game = ({ addScore }) => {
     setRandomShape(housePick);
     setPick(name);
     if (name === housePick) {
-      setresult("Draw");
+      setresult("draw");
       return;
     }
     if (gamePattern[name].includes(housePick)) {
-      setresult("Win");
-      addScore();
+      setresult("win");
+      changeScore("+");
       return;
     }
-    setresult("Lose");
+    setresult("lose");
+    changeScore();
   };
 
   const restart = () => {

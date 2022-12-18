@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Rules from "./Components/Rules";
-import Header from "./Components/Header";
+import Rules from "./Components/Rules/Rules";
+import Header from "./Components/Header/Header";
 import Game from "./Components/Game/Game";
 import "./App.css";
 
@@ -15,9 +15,11 @@ function App() {
     setRules(!rules);
   };
 
-  const addScoreHandle = () => {
-    count += 1;
-    setScore(count);
+  const changeScoreHandler = (sign) => {
+    setTimeout(() => {
+      sign === "+" ? count++ : count--;
+      setScore(count);
+    }, 1000);
   };
 
   return (
@@ -25,7 +27,7 @@ function App() {
       <main className="container">
         {rules ? <Rules showRules={showRulesHandler} /> : ""}
         <Header score={score} />
-        <Game addScore={addScoreHandle} />
+        <Game changeScore={changeScoreHandler} />
         <button className="btn" onClick={showRulesHandler}>
           RULES
         </button>

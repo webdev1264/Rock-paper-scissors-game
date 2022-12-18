@@ -10,6 +10,8 @@
   border-radius: 100%;
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  transform-style: preserve-3d;
+  z-index: 1;
 }
 
 .scissors {
@@ -34,6 +36,7 @@
   box-shadow: 0 4px inset hsl(227, 24%, 77%), 0 4px hsl(348, 74%, 35%);
 }
 .lizard {
+  position: absolute;
   top: 151px;
   left: -13px;
   background-image: linear-gradient(hsl(290, 12%, 90%), hsl(290, 12%, 90%)),
@@ -49,7 +52,7 @@
   box-shadow: 0 4px inset hsl(227, 24%, 77%), 0 4px hsl(194, 60%, 43%);
 }
 
-.scissorsIcon {
+.icon {
   display: block;
   height: 50%;
 }
@@ -59,10 +62,15 @@
   left: 0;
   width: 130px;
   height: 130px;
-  z-index: 1;
+  transform-style: preserve-3d;
 }
 
-.picked:nth-child(2) {
+.random {
+  opacity: 0;
   left: unset;
   right: 0;
+}
+
+.visible {
+  opacity: 1;
 }

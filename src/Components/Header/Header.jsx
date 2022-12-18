@@ -1,5 +1,5 @@
 import styles from "./header.module.css";
-import logo from "../data/images/logo-bonus.svg";
+import logo from "../../data/images/logo-bonus.svg";
 
 const Header = ({ score }) => {
   return (

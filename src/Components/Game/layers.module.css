@@ -1,0 +1,56 @@
+@keyframes firstLayer {
+  from {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes secondLayer {
+  from {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1.6);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+@keyframes thirdLayer {
+  from {
+    transform: scale(1.9);
+  }
+  50% {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1.9);
+  }
+}
+
+.firstLayer,
+.secondLayer,
+.thirdLayer {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.03);
+  transform: translateZ(-1px);
+}
+
+.firstLayer {
+  animation: firstLayer 2s linear 1s infinite;
+}
+.secondLayer {
+  animation: secondLayer 2s linear 1s infinite;
+}
+.thirdLayer {
+  animation: thirdLayer 2s linear 1s infinite;
+}
