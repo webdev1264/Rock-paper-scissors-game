@@ -15,7 +15,6 @@
 }
 
 .scoreWrapper {
-  height: 72px;
   width: 80px;
   border-radius: 5px;
   background-color: #fff;
@@ -32,4 +31,32 @@
   font-weight: 700;
   line-height: 40px;
   color: var(--dark-text);
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    border-radius: 15px;
+    width: 700px;
+    height: 152px;
+    padding: 15px 20px;
+  }
+
+  .logo {
+    margin: 1px 5px;
+  }
+
+  .scoreWrapper {
+    width: 150px;
+    border-radius: 8px;
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .counter {
+    font-size: 65px;
+    margin-top: 12px;
+  }
 }
