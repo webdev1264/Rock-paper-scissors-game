@@ -6,3 +6,10 @@
   background: url("../../data/images/bg-pentagon.svg") center center/cover
     no-repeat;
 }
+
+@media screen and (min-width: 1366px) {
+  .container {
+    height: 310px;
+    width: 310px;
+  }
+}

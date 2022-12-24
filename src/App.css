@@ -1,4 +1,5 @@
 .App {
+  position: relative;
   text-align: center;
   background-image: linear-gradient(var(--radial-gradient));
   width: 100%;
@@ -7,9 +8,14 @@
   overflow: hidden;
 }
 
+.container  {
+  height: 100%;
+}
+
 .btn {
   height: 40px;
   width: 130px;
+  margin-top: 175px;
   border: 2px solid hsl(225, 17%, 59%);
   border-radius: 7px;
   background-color: hsl(230, 44%, 18%);
@@ -20,6 +26,11 @@
 
 @media screen and (min-width: 1366px) {
   .App {
-    padding: 47px;
+    padding: 47px 30px 13px;
+  }
+
+  .btn {
+    position: absolute;
+    right: 30px;
   }
 }

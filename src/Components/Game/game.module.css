@@ -1,5 +1,11 @@
 .container {
   height: 200px;
   width: 100%;
-  margin: 147px auto 175px;
+  margin: 147px auto 0;
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    margin-top: 123px;
+  }
 }
