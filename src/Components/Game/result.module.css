@@ -1,7 +1,7 @@
 .container {
   position: relative;
   width: 315px;
-  margin: 0 auto;
+  margin: 147px auto;
   color: #fff;
   padding: 200px 0 0;
 }
@@ -48,4 +48,11 @@
 
 .visible {
   opacity: 1;
+}
+
+@media screen and (min-width: 1366px) {
+  .round {
+    width: 220px;
+    height: 220px;
+  }
 }

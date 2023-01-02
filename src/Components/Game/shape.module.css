@@ -111,4 +111,9 @@
     height: 300px;
     transform-style: preserve-3d;
   }
+
+  .random {
+    right: -182px;
+    left: unset;
+  }
 }

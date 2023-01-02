@@ -1,5 +1,5 @@
 import styles from "./shape.module.css";
-import scrissors from "../../data/images/icon-scissors.svg";
+import scissors from "../../data/images/icon-scissors.svg";
 import paper from "../../data/images/icon-paper.svg";
 import rock from "../../data/images/icon-rock.svg";
 import lizard from "../../data/images/icon-lizard.svg";
@@ -17,7 +17,7 @@ const Shape = ({
 }) => {
   const imgUrl =
     name === "scissors"
-      ? scrissors
+      ? scissors
       : name === "paper"
       ? paper
       : name === "rock"
