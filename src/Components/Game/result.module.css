@@ -1,7 +1,7 @@
 .container {
   position: relative;
   width: 315px;
-  margin: 147px auto;
+  margin: 147px auto 0;
   color: #fff;
   padding: 200px 0 0;
 }
