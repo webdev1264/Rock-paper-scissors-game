@@ -6,6 +6,7 @@
   background-color: #fff;
   height: 95px;
   width: 95px;
+  margin: 0 auto;
   border: double 10px transparent;
   border-radius: 100%;
   background-origin: border-box;
@@ -57,6 +58,7 @@
 }
 
 .picked {
+  position: static;
   top: -50px;
   left: 0;
   width: 130px;
@@ -78,42 +80,47 @@
   .shape {
     height: 145px;
     width: 145px;
-    border: double 18px transparent;
   }
 
   .scissors {
     top: -76px;
     left: 82px;
+    /* box-shadow: 0 10px inset hsl(227, 24%, 77%), 0 10px hsl(28, 76%, 43%); */
   }
 
   .paper {
     top: 52px;
     right: -80px;
+    /* box-shadow: 0 10px inset hsl(227, 24%, 77%), 0 10px hsl(230, 66%, 47%); */
   }
   .rock {
     top: 238px;
     right: -16px;
+    /* box-shadow: 0 10px inset hsl(227, 24%, 77%), 0 10px hsl(348, 74%, 35%); */
   }
   .lizard {
     top: 238px;
     right: -16px;
+    /* box-shadow: 0 10px inset hsl(227, 24%, 77%), 0 10px hsl(261, 50%, 44%); */
   }
 
   .spock {
     top: 54px;
     left: -80px;
+    /* box-shadow: 0 10px inset hsl(227, 24%, 77%), 0 10px hsl(194, 60%, 43%); */
   }
 
   .picked {
-    top: 40px;
+    top: 16px;
     left: -182px;
     width: 300px;
     height: 300px;
     transform-style: preserve-3d;
+    border: double 38px transparent;
   }
 
   .random {
-    right: -182px;
+    right: -167px;
     left: unset;
   }
 }

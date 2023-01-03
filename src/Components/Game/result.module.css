@@ -1,36 +1,45 @@
 .container {
   position: relative;
-  width: 315px;
-  margin: 147px auto 0;
   color: #fff;
-  padding: 200px 0 0;
+  margin: 0 auto;
+}
+
+.shapesWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.shapeWrapper {
+  width: 150px;
+  height: 200px;
+}
+
+.youPick,
+.housePick {
+  display: block;
+  margin-top: 25px;
+  letter-spacing: 2px;
+  font-size: 15px;
 }
 
 .round {
-  position: absolute;
-  background-color: hsl(220, 46%, 19%);
-  top: -40px;
-  right: 0;
+  background-color: hsl(223,48%,17%);
+  margin: 20px auto 0;
   height: 110px;
   width: 110px;
   border-radius: 100%;
   z-index: 0;
 }
 
-.youPick {
-  position: absolute;
-  left: 30px;
-  top: 100px;
-}
-.housePick {
-  position: absolute;
-  right: 0;
-  top: 100px;
+.resultWrapper {
+  margin-top: 43px;
 }
 
 .result {
   opacity: 0;
-  font-size: 35px;
+  font-size: 57px;
   text-transform: uppercase;
 }
 
@@ -38,9 +47,10 @@
   opacity: 0;
   border-radius: 10px;
   border: none;
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Barlow Semi Condensed", sans-serif;
-  margin-top: 20px;
+  letter-spacing: 2px;
+  margin-top: 14px;
   color: var(--dark-text);
   width: 220px;
   height: 50px;
@@ -51,8 +61,28 @@
 }
 
 @media screen and (min-width: 1366px) {
+.container {
+  display: flex;
+}
+
   .round {
     width: 220px;
     height: 220px;
+    top: 55px;
+    right: -128px;
+  }
+
+  .youPick,
+  .housePick {
+    top: -73px;
+    font-size: 22px;
+    letter-spacing: 4px;
+  }
+
+  .youPick {
+    left: -104px;
+  }
+  .housePick {
+    right: -135px;
   }
 }

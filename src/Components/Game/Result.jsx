@@ -15,28 +15,38 @@ const Result = (props) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.shapeWrapper}>
-        <Shape {...props} name={props.pick} />
-        <Shape
-          {...props}
-          name={randomShape}
-          randomShape={randomShape}
-          className="random"
-          display={display}
-        />
-        <div className={styles.round}></div>
+      <div className={styles.shapesWrapper}>
+        <div className={styles.shapeWrapper}>
+          <Shape {...props} name={props.pick} />
+          <span className={styles.youPick}>YOU PICKED</span>
+        </div>
+        <div className={styles.shapeWrapper}>
+          {!display ? (
+            <div className={styles.round}></div>
+          ) : (
+            <Shape
+              {...props}
+              name={randomShape}
+              randomShape={randomShape}
+              className="random"
+              display={display}
+            />
+          )}
+          <span className={styles.housePick}>THE HOUSE PICKED</span>
+        </div>
       </div>
-      <span className={styles.youPick}>YOU PICKED</span>
-      <span className={styles.housePick}>THE HOUSE PICKED</span>
-      <p className={`${styles.result} ${display ? styles.visible : ""}`}>
-        {result !== "draw" ? `you ${result}` : result}
-      </p>
-      <button
-        className={`${styles.btn} ${display ? styles.visible : ""}`}
-        onClick={restart}
-      >
-        PLAY AGAIN
-      </button>
+
+      <div className={styles.resultWrapper}>
+        <p className={`${styles.result} ${display ? styles.visible : ""}`}>
+          {result !== "draw" ? `you ${result}` : result}
+        </p>
+        <button
+          className={`${styles.btn} ${display ? styles.visible : ""}`}
+          onClick={restart}
+        >
+          PLAY AGAIN
+        </button>
+      </div>
     </div>
   );
 };

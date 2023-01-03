@@ -3,24 +3,25 @@
   text-align: center;
   background-image: linear-gradient(var(--radial-gradient));
   width: 100%;
-  padding: 30px;
+  padding: 30px 20px;
   overflow: hidden;
-}
-
-.container  {
-  min-height: 768px;
+  height: 750px;
 }
 
 .btn {
   height: 40px;
   width: 130px;
-  margin-top: 175px;
+  position: absolute;
+  bottom: 54px;
+  left: 50%;
+  transform: translate(-50%);
   border: 2px solid hsl(225, 17%, 59%);
   border-radius: 7px;
   background-color: hsl(230, 44%, 18%);
   color: #fff;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 17px;
+  letter-spacing: 2px;
 }
 
 @media screen and (min-width: 1366px) {
@@ -30,8 +31,9 @@
 
   .btn {
     position: absolute;
-    right: 30px;
-    bottom: 30px;
+    right: 31px;
+    bottom: 32px;
+    letter-spacing: 2px;
     margin: 0;
   }
 }
