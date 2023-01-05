@@ -7,12 +7,12 @@ import "./App.css";
 let count = 0;
 
 function App() {
-  const [rules, setRules] = useState(false);
+  const [showRules, setShowRules] = useState(false);
 
   const [score, setScore] = useState(count);
 
   const showRulesHandler = () => {
-    setRules(!rules);
+    setShowRules(!showRules);
   };
 
   const changeScoreHandler = (sign) => {
@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <main className="container">
-        {rules ? <Rules showRules={showRulesHandler} /> : ""}
+        {showRules ? <Rules showRules={showRulesHandler} /> : ""}
         <Header score={score} />
         <Game changeScore={changeScoreHandler} />
         <button className="btn" onClick={showRulesHandler}>

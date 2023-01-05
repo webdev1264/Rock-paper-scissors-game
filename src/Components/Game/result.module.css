@@ -7,19 +7,26 @@
 .shapesWrapper {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 93px;
 }
 
 .shapeWrapper {
+  position: relative;
   width: 150px;
-  height: 200px;
+  height: 179px;
 }
 
 .youPick,
 .housePick {
   display: block;
-  margin-top: 25px;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  margin-top: 59px;
   letter-spacing: 2px;
   font-size: 15px;
 }
@@ -34,17 +41,16 @@
 }
 
 .resultWrapper {
-  margin-top: 43px;
+  display: none;
+  margin: 70px auto 0;
 }
 
 .result {
-  opacity: 0;
   font-size: 57px;
   text-transform: uppercase;
 }
 
 .btn {
-  opacity: 0;
   border-radius: 10px;
   border: none;
   font-size: 17px;
@@ -57,7 +63,7 @@
 }
 
 .visible {
-  opacity: 1;
+  display: block;
 }
 
 @media screen and (min-width: 1366px) {
@@ -68,21 +74,41 @@
   .round {
     width: 220px;
     height: 220px;
-    top: 55px;
-    right: -128px;
+    margin-top: 36px;
+  }
+
+  .shapesWrapper {
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .shapeWrapper {
+    width: 310px;
+    height: 310px;
+    margin: 0 35px;
+  }
+
+  .shapeWrapper:nth-child(1) {
+    order: 1;
+  }
+  .shapeWrapper:nth-child(2) {
+    order: 3;
   }
 
   .youPick,
   .housePick {
-    top: -73px;
+    top: -148px;
     font-size: 22px;
     letter-spacing: 4px;
   }
 
-  .youPick {
-    left: -104px;
+  .resultWrapper{
+    order: 2;
+    margin: 68px 10px 0;
+    z-index: 1;
   }
-  .housePick {
-    right: -135px;
+
+  .btn {
+    cursor: pointer;
   }
 }

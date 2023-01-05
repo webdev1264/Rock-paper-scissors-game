@@ -18,7 +18,7 @@ const Game = ({ changeScore }) => {
 
   const [randomShape, setRandomShape] = useState();
 
-  const [result, setresult] = useState();
+  const [result, setResult] = useState();
 
   const getRandomShape = () => {
     const randomNum = Math.round(Math.random() * 4);
@@ -30,15 +30,15 @@ const Game = ({ changeScore }) => {
     setRandomShape(housePick);
     setPick(name);
     if (name === housePick) {
-      setresult("draw");
+      setResult("draw");
       return;
     }
     if (gamePattern[name].includes(housePick)) {
-      setresult("win");
+      setResult("win");
       changeScore("+");
       return;
     }
-    setresult("lose");
+    setResult("lose");
     changeScore();
   };
 

@@ -34,18 +34,16 @@ const Result = (props) => {
           )}
           <span className={styles.housePick}>THE HOUSE PICKED</span>
         </div>
-      </div>
-
-      <div className={styles.resultWrapper}>
-        <p className={`${styles.result} ${display ? styles.visible : ""}`}>
-          {result !== "draw" ? `you ${result}` : result}
-        </p>
-        <button
-          className={`${styles.btn} ${display ? styles.visible : ""}`}
-          onClick={restart}
+        <div
+          className={`${styles.resultWrapper} ${display ? styles.visible : ""}`}
         >
-          PLAY AGAIN
-        </button>
+          <p className={styles.result}>
+            {result !== "draw" ? `you ${result}` : result}
+          </p>
+          <button className={styles.btn} onClick={restart}>
+            PLAY AGAIN
+          </button>
+        </div>
       </div>
     </div>
   );

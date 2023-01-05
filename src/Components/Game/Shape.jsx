@@ -37,7 +37,7 @@ const Shape = ({
     >
       {result === "win" && pick === name ? <Layers /> : ""}
       {result === "lose" && pick !== name ? <Layers /> : ""}
-      <img className={styles.icon} src={imgUrl} alt="scissors" />
+      <img className={styles.icon} src={imgUrl} alt={name} />
     </div>
   );
 };

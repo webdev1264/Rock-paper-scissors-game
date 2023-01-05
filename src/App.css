@@ -12,7 +12,7 @@
   height: 40px;
   width: 130px;
   position: absolute;
-  bottom: 54px;
+  bottom: 56px;
   left: 50%;
   transform: translate(-50%);
   border: 2px solid hsl(225, 17%, 59%);
@@ -31,8 +31,9 @@
 
   .btn {
     position: absolute;
-    right: 31px;
-    bottom: 32px;
+    right: -33px;
+    left: unset;
+    bottom: 15px;
     letter-spacing: 2px;
     margin: 0;
   }
