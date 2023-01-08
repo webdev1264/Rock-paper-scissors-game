@@ -24,3 +24,33 @@
 .closeImg {
   margin-top: 135px;
 }
+
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 400px;
+    height: 460px;
+    left: 50%;
+    top: 50%;
+    padding: 30px;
+    border-radius: 10px;
+    transform: translate(-50%, -48%);
+  }
+
+  .header {
+    text-align: left;
+    font-size: 33px;
+  }
+
+  .rulesImg {
+    margin-top: 15px;
+    width: 340px;
+  }
+
+  .closeImg {
+    position: absolute;
+    cursor: pointer;
+    margin: 0;
+    top: 38px;
+    right: 32px;
+  }
+}

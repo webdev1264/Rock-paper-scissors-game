@@ -64,48 +64,45 @@
 }
 
 .random {
-  opacity: 0;
   left: unset;
   right: 0;
-}
-
-.visible {
-  opacity: 1;
 }
 
 @media screen and (min-width: 1366px) {
   .shape {
     transform: scale(1.56);
+    cursor: pointer;
   }
 
   .scissors {
-    top: -76px;
+    top: -50px;
     left: 108px;
   }
 
   .paper {
-    top: 52px;
+    top: 68px;
     right: -55px;
   }
+
   .rock {
-    top: 238px;
+    top: 254px;
     right: 9px;
   }
+
   .lizard {
-    top: 238px;
+    top: 254px;
     left: 9px;
   }
 
   .spock {
-    top: 54px;
+    top: 68px;
     left: -55px;
   }
-
+  
   .picked {
     top: 16px;
     left: -182px;
     transform: scale(3.13) translateY(32px);
-    transform-style: preserve-3d;
   }
 
   .random {

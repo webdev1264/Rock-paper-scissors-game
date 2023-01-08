@@ -46,11 +46,11 @@
 }
 
 .firstLayer {
-  animation: firstLayer 2s linear 1s infinite;
+  animation: firstLayer 2s linear infinite;
 }
 .secondLayer {
-  animation: secondLayer 2s linear 1s infinite;
+  animation: secondLayer 2s linear infinite;
 }
 .thirdLayer {
-  animation: thirdLayer 2s linear 1s infinite;
+  animation: thirdLayer 2s linear infinite;
 }

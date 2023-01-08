@@ -19,7 +19,7 @@ function App() {
     setTimeout(() => {
       sign === "+" ? count++ : count--;
       setScore(count);
-    }, 1000);
+    }, 2000);
   };
 
   return (
