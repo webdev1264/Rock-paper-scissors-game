@@ -1,11 +1,16 @@
 .App {
   position: relative;
   text-align: center;
-  background-image: linear-gradient(var(--radial-gradient));
+  background: linear-gradient(var(--radial-gradient)) center center/cover no-repeat;
   width: 100%;
   padding: 30px 20px;
   overflow: hidden;
-  height: 750px;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  height: 100%;
 }
 
 .btn {
@@ -27,6 +32,7 @@
 @media screen and (min-width: 1366px) {
   .App {
     padding: 47px 30px 13px;
+    /* min-height: 100vh; */
   }
 
   .btn {
@@ -37,5 +43,11 @@
     letter-spacing: 2px;
     margin: 0;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .App {
+    height: 750px;
   }
 }
