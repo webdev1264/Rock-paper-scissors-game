@@ -98,11 +98,12 @@
     top: 68px;
     left: -55px;
   }
-  
+
   .picked {
     top: 16px;
     left: -182px;
     transform: scale(3.13) translateY(32px);
+    cursor: unset;
   }
 
   .random {
