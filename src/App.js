@@ -4,7 +4,13 @@ import Header from "./Components/Header/Header";
 import Game from "./Components/Game/Game";
 import "./App.css";
 
-let count = 0;
+let count;
+
+if (!localStorage.getItem("count")) {
+  localStorage.setItem("count", 0);
+}
+
+count = localStorage.getItem("count");
 
 function App() {
   const [showRules, setShowRules] = useState(false);
@@ -19,6 +25,7 @@ function App() {
     setTimeout(() => {
       sign === "+" ? count++ : count--;
       setScore(count);
+      localStorage.setItem("count", count);
     }, 2000);
   };
 

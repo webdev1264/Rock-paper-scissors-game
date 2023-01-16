@@ -17,7 +17,7 @@ const Shape = ({
   result,
   display,
 }) => {
-  console.log(result, pick, name, display);
+  // console.log(result, pick, name, display);
   return (
     <div
       className={`${styles.shape} ${styles[name]} ${
