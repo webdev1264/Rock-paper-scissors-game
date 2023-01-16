@@ -1,5 +1,7 @@
 # Frontend Mentor - Rock, Paper, Scissors
 
+Live site URL: https://webdev1264.github.io/Rock-paper-scissors-game/
+
 ![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
