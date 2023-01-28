@@ -35,7 +35,6 @@
 .firstLayer,
 .secondLayer,
 .thirdLayer {
-  content: "";
   position: absolute;
   display: block;
   width: 130px;
