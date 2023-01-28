@@ -36,9 +36,9 @@
 
   .btn {
     position: absolute;
-    right: -33px;
+    right: -65px;
     left: unset;
-    bottom: 15px;
+    bottom: 0px;
     letter-spacing: 2px;
     margin: 0;
     cursor: pointer;
